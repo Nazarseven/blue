@@ -1,0 +1,496 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$font: 'Hind', sans-serif;
+
+body{
+    /* font-family: 'Hind', sans-serif; */
+    font-family: 'Poppins', sans-serif; 
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* .container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../Resurs/modern-luxury-hotel-and-office-reception-and-lounge-with-meeting-room.jpg);
+    background-position: center;
+    background-size: cover;
+} */
+
+header{
+    padding: 23px 0;
+    background-color: #293241;
+    .menu{
+        button{
+            display: none;
+            border: none;
+            background: transparent;
+            align-items: center;
+            margin-top: 6px;
+            div{
+                width: 30px;
+                height: 3px;
+                background: #f1ce50;
+                margin-top: 5px;
+            }
+        }
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .numbers{
+            margin-left: 20px;
+            p{
+                color: #fff;
+                font-size: 14px;
+            }
+        }
+        .nav-list{
+            display: flex;
+            align-items: center;
+            #num1,#num2{
+                display: none;
+            }
+            ul{
+                li{
+                    button{
+                        display: none;
+                    }
+                    display: inline-block;
+                    margin-left: 15px;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        font-weight: 400;
+                        transition: .3s ease-in-out;
+                        &:hover{
+                            color: #f1ce50;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .logo{
+        font-family: $font;
+        font-size: 25px;
+        color: #f1ce50;
+        display: flex;
+        align-items: center;
+        .logo-inner{
+            margin-left: 10px;
+            h5{
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+    }
+}
+
+/* SECTION 1 */
+
+#section1{
+    background-image: linear-gradient(#293241,rgba(0,0,0,0.7)), url(../img/modern-luxury-hotel-and-office-reception-and-lounge-with-meeting-room.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 216px;
+    text-align: center;
+    .sec-1{
+        text-align: center;
+        margin: 0 auto;
+        h2{
+            color: #fff;
+            font-size: 33px;
+            line-height: 60px;
+            text-align: center;
+            max-width: 700px;
+            span{
+                color: #f1ce50;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            background: #293241;
+            box-shadow:  5px 5px 5px -5px #fff  inset;
+            border-radius: 10px;
+            display: block;
+            width: 230px;
+            text-align: center;
+            margin-top: 20px;
+            transition: all 1s;
+            margin: 0 auto;
+            margin-top: 20px;
+            &:hover{
+                box-shadow:  5px 5px 5px -5px #fff inset, 3px 3px 5px -5px #fff;
+            }
+        }
+    }
+}
+
+/* SECTION 2 */
+
+#section2{
+    padding: 50px 0;
+    text-align: center;
+    background-color: beige;
+    .section-2-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 5px;
+        max-width: 700px;
+        margin: 0 auto; 
+        margin-bottom: 15px;
+        img{
+            width: 100%;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            background: #293241;
+            box-shadow:  5px 5px 5px -5px #fff  inset;
+            border-radius: 10px;
+            display: block;
+            width: 230px;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 20px;
+            transition: all 1s;
+            &:hover{
+                box-shadow:  5px 5px 5px -5px #fff inset, 3px 3px 5px -5px #fff;
+            }
+        }
+    }
+}
+
+/* SECTION 4 */
+
+#section4{
+    padding: 50px 0;
+    text-align: center;
+    h2{
+        color: #293241;
+        margin-bottom: 20px;
+    }
+    ul li{
+        list-style: none;
+        margin-bottom: 5px;
+    }
+}
+
+
+/* FOOTER */
+
+#footer{
+    background: linear-gradient(#293241,rgba(0,0,0,0.7)), url(../img/luxury-bedroom-suite-in-resort-high-rise-hotel-with-working-table.jpg);
+    padding: 30px 0 10px;
+    background-size: cover;
+    background-position: center;
+    .inc{
+        text-align: center;
+        p{
+            margin-top: 10px;
+            margin-bottom: px;
+            color: #f1ce50;
+        }
+    }
+    .row{
+        align-items: flex-start;
+        margin-bottom: 35px;
+    }
+    .footer-1{
+        .numbers{
+            p{
+                margin-top: 14px;
+                color: #f1ce50;
+                a{
+                    text-decoration: none;
+                    color: #f1ce50;
+                }
+            }
+        }
+        ul li{
+            list-style: none;
+            margin-top: 10px;
+            a{
+                text-decoration: none;
+                color: #f1ce50;
+                font-size: 15px;
+                transition: color .5s ease-in-out;
+                &:hover{
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .footer-2{
+        p{
+            color: #f1ce50;
+            margin-bottom: 10px;
+        }
+        .map{
+            iframe{
+                width: 350px;
+                height: 250px;
+            }
+        }
+        .footer-2-1{
+            display: flex;
+            align-items: center;
+            img{
+                width: 17px;
+                margin-right: 10px;
+            }
+            h2{
+                color: #f1ce50;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+/* FOOTER */
+
+/* OBOY */
+
+#section3{
+    padding: 50px 0;
+    text-align: center;
+    h2{
+        margin-bottom: 30px;
+    }
+    .row{
+        padding: 15px 0;
+        .row-1{
+            flex-basis: 47%;
+            border: 2px solid #293241;
+            padding: 5px;
+            border-radius: 10px;
+            img{
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+    h2{
+        color: #293241;
+    }
+    .popup-image{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.9);
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+        display: none;
+        h3{
+            position: absolute;
+            top: 0px;
+            right: 20px;
+            font-weight: bolder;
+            color: #f1ce50;
+            cursor: pointer;
+            z-index: 100;
+            font-size: 40px;
+        }
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 5px solid #f1ce50;
+            border-radius: 5px;
+            object-fit: cover;
+            width: 700px;
+        }
+    }
+}
+
+/* MEDIA */
+
+@media only screen and(max-width: 850px){
+    #header{
+        position: relative;
+        .numbers{
+            p{
+                display: none;
+            }
+        }
+        .menu{
+            button{
+                display: block;
+                position: absolute;
+                top: 25%;
+                right: 7%;
+                font-size: 30px;
+            }
+        }
+        .nav-list{
+            #num1,#num2{
+                display: block;
+                color: #fff;
+            }
+            ul{
+                position: fixed;
+                background: #f1ce50;
+                width: 50%;
+                height: 100%;
+                top: 0;
+                right: -50%;
+                border-radius: 20px 0 0 20px;
+                padding-top: 2px;
+                transition: .5s ease-in-out;
+                z-index: 10;
+                li{
+                    button{
+                        display: block;
+                        background: transparent;
+                        border: 1px solid;
+                        font-weight: bold;
+                        padding: 7px 9px;
+                        border-radius: 10px;
+                        color: #fff;
+                    }
+                    display: block;
+                    margin-top: 15px;
+                    a{
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 768px){
+    #footer{
+        .row{
+            flex-direction: column-reverse;
+            .footer-2, .footer-1{
+                flex-basis: 100%;
+            }
+        }
+    }
+    #header{
+        .logo{
+            h1{
+                font-size: 30px;
+            }
+            h5{
+                font-size: 12px;
+            }
+        }
+    }
+    #section3{
+        .popup-image{
+            img{
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 650px){
+    #section2{
+        .section-2-content{
+            flex-basis: 100%;
+            img{
+                width: 100%;
+            } a{
+            padding: 5px;
+            width: 150px;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 400px){
+    #section1{
+        background-image: linear-gradient(#293241,rgba(0,0,0,0.7)), url(../img/modern-luxury-hotel-and-office-reception-and-lounge-with-meeting-room.jpg);
+        background-position: center;
+        background-size: cover;
+        padding-top: 100px;
+        padding-bottom: 170px;
+        text-align: center;
+        .sec-1{
+            h2{
+                font-size: 25px;
+            }
+        }
+    }
+    #section3{
+        .row{
+            .row-1{
+               padding-bottom: 0px;
+               flex-basis: 49%;
+            }
+        }
+
+    }
+    #footer{
+        .row{
+            .footer-2{
+                .map{
+                    iframe{
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    #section2{
+        text-align: center;
+    .section-2-content{ 
+        a{
+        padding: 5px 20px;
+        width: 120px;
+        text-align: center;
+        }
+    }
+    }
+}
+
+@media only screen and(max-width: 375px){
+    #header{
+        .menu{
+            button{
+                img{
+                    width: 40px;
+                    height: 40px;
+                    margin-top: 1px;
+                }
+            }
+        }
+        position: relative;
+        .logo{
+            h1{
+                font-size: 25px;
+            }
+        }
+    }
+}
